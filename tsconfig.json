@@ -1,0 +1,18 @@
+
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "rootDirs": ["./src"],
+    "types": ["node"],
+    "target": "es2018",
+    "strict": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "~/*": ["./*"]
+    }
+  }
+}

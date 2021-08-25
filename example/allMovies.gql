@@ -1,0 +1,29 @@
+
+query ExampleQuery {
+  getAllMovies {
+    id
+    title
+    plotSummary
+    mpaaRating
+    releaseYear
+    ratingPercent
+    runtimeInSeconds
+    crew {
+      job 
+      person {
+        firstName
+        lastName
+      }
+    }
+    cast {
+      firstName
+      lastName
+      job
+      person {
+        birthdaySerialized
+        firstName
+        lastName
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+query ExampleQuery {
+  node(id: "bW92aWU6MQ==") {
+    ... on Movie {
+      _entity
+      id
+      title
+      plotSummary
+      mpaaRating
+      releaseYear
+      ratingPercent
+      runtimeInSeconds
+      crew {
+        job 
+        person {
+          firstName
+          lastName
+        }
+      }
+      cast {
+        firstName
+        lastName
+        job
+        person {
+          birthdaySerialized
+          firstName
+          lastName
+        }
+      }
+    }
+  }
+}

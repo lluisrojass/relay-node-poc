@@ -1,0 +1,12 @@
+query ExampleQuery {
+  getMovie(movieId: "bW92aWU6MQ==") {
+    id
+    title
+    plotSummary
+    storyline
+    mpaaRating
+    releaseYear
+    ratingPercent
+    runtimeInSeconds
+  }
+}

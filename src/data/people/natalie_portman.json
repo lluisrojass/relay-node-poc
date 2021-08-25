@@ -1,0 +1,10 @@
+{
+  "id": 3,
+  "firstName": "Natalie",
+  "lastName": "Portman",
+  "birthday": {
+    "day": 9,
+    "month": 6,
+    "year": 1981
+  }
+}

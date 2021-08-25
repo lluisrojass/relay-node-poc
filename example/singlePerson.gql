@@ -1,0 +1,8 @@
+query ExampleQuery {
+  getPerson(id: "cGVyc29uOjE=") {
+    id
+    firstName
+    birthdaySerialized
+    isHuman
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "movieId": 1,
+    "personId": 1,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Obi-Wan",
+      "lastName": "Kenobi"
+    }
+  },
+  {
+    "movieId": 1,
+    "personId": 2,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Qui-Gon",
+      "lastName": "Jinn"
+    }
+  },
+  {
+    "movieId": 1,
+    "personId": 3,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Padmé",
+      "lastName": "Amidala"
+    }
+  },
+  {
+    "movieId": 1,
+    "personId": 10,
+    "role": {
+      "type": "crew",
+      "job": "director"
+    }
+  },
+  {
+    "movieId": 2,
+    "personId": 1,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Obi-Wan",
+      "lastName": "Kenobi"
+    }
+  },
+  {
+    "movieId": 2,
+    "personId": 2,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Qui-Gon",
+      "lastName": "Jinn"
+    }
+  },
+  {
+    "movieId": 2,
+    "personId": 3,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Padmé",
+      "lastName": "Amidala"
+    }
+  },
+  {
+    "movieId": 2,
+    "personId": 10,
+    "role": {
+      "type": "crew",
+      "job": "director"
+    }
+  },
+  {
+    "movieId": 3,
+    "personId": 1,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Obi-Wan",
+      "lastName": "Kenobi"
+    }
+  },
+  {
+    "movieId": 3,
+    "personId": 2,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Qui-Gon",
+      "lastName": "Jinn"
+    }
+  },
+  {
+    "movieId": 3,
+    "personId": 3,
+    "role": {
+      "type": "cast",
+      "job": "actor"
+    },
+    "character": {
+      "firstName": "Padmé",
+      "lastName": "Amidala"
+    }
+  },
+  {
+    "movieId": 3,
+    "personId": 10,
+    "role": {
+      "type": "crew",
+      "job": "director"
+    }
+  }
+]
