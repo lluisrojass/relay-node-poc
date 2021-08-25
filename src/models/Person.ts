@@ -1,8 +1,10 @@
-import { ObjectType, Field, Root } from 'type-graphql';
+import { ObjectType, Field, Root, Ctx } from 'type-graphql';
 import { Node } from './Node';
 import {
+  Context,
   RawPerson
 } from '../types';
+import { PersonUtils } from '../utils/PersonUtils';
 
 @ObjectType({ implements: Node })
 export class Person extends Node {
@@ -25,5 +27,22 @@ export class Person extends Node {
 
     Object.assign(root, { isHuman: false });
     return [day, month, year].join('/');
+  }
+
+  @Field(type => Boolean)
+  _entity(
+    @Root() root: Person & RawPerson,
+    @Ctx() { dataSources }: Context
+  ) {
+    const { id } = PersonUtils.fromGlobalId(root.id);
+    const { peopleApi } = dataSources;
+    const person = peopleApi.getPerson(id);
+
+    Object.assign(root, {
+      ...person,
+      id: root.id
+    });
+
+    return true;
   }
 }

@@ -1,0 +1,11 @@
+query ExampleQuery {
+  node(id: "UGVyc29uOjEw") {
+    id
+    ... on Person {
+      _entity
+      firstName
+      lastName
+      birthdaySerialized
+    }
+  }
+}

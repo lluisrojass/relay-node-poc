@@ -5,6 +5,7 @@ This is a Graph with entities that adhere to [Relay Object Spec](https://relay.d
   
 The idea is to leverage this algorithm, but for entity resolutions. the `node()` query returns two things, a hidden, private property called `_type` and an echo of the `id` parameter it received. The `_type` property is to suppress entity checks inside `graphql-js` by forcing GraphQL to trust us on the type info being returned by the `node()` query. I've added a new property on the `Movie` model called `_entity`, which preforms the entity lookup.  
 # Caveats
+1. The `type` in the internal relay ID **has** to match the Capitalized GraphQL entity `type`.   
 1. There would need to be consideration taken if we ever enter a world where global ids are a functioning hybrid of UUIDs and `relay` constructed IDs.  
 2. All consumers are responsible to include the `_entity` property in their queries, otherwise they will clearly encounter an error.
 3. There might be adverse ramifications stemming from the hack in the Node abstract class, which is necessary to get this to work. 

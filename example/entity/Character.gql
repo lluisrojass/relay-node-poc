@@ -1,0 +1,16 @@
+query ExampleQuery {
+  node(id: "Q2hhcmFjdGVyOjE6MQ==") {
+    id
+    ... on Character {
+      _entity
+      firstName
+      lastName
+      job
+      type
+      person {
+        firstName
+        lastName
+      }
+    }
+  }
+}

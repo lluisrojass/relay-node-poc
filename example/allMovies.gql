@@ -1,5 +1,4 @@
-
-query ExampleQuery {
+query ExampleQuery1 {
   getAllMovies {
     id
     title
@@ -9,13 +8,16 @@ query ExampleQuery {
     ratingPercent
     runtimeInSeconds
     crew {
+      id
       job 
       person {
+        id
         firstName
         lastName
       }
     }
     cast {
+      id
       firstName
       lastName
       job

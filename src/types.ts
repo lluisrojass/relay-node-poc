@@ -87,8 +87,8 @@ export interface Context<T = {}> {
 };
 
 export const enum PublicEntities {
-  PERSON = 'person',
-  CREW_MEMBER = 'crew',
-  CHARACTER = 'character',
-  MOVIE = 'movie'
+  PERSON = 'Person',
+  CREW_MEMBER = 'CrewMember',
+  CHARACTER = 'Character',
+  MOVIE = 'Movie'
 };

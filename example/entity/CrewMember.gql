@@ -1,0 +1,14 @@
+
+query ExampleQuery {
+  node(id: "Q3Jld01lbWJlcjoxOjEw") {
+    id
+    ... on CrewMember {
+      _entity
+      person {
+        firstName
+        lastName
+      }
+    }
+  }
+}
+

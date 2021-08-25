@@ -51,4 +51,25 @@ export class Character extends Node {
       id: PersonUtils.toGlobalId(person)
     };
   }
+
+  @Field(type => Boolean)
+  _entity(
+    @Root() root: Person & RawMoviePerson,
+    @Ctx() { dataSources }: Context
+  ) {
+    const { personId, movieId } = CharacterUtils.fromGlobalId(root.id);
+    const { moviePeopleApi } = dataSources;
+    const castMember = moviePeopleApi.getMoviePerson(
+      movieId,
+      personId, 
+      RawMoviePersonType.cast
+    );
+
+    Object.assign(root, {
+      ...castMember,
+      id: root.id
+    });
+
+    return true;
+  }
 };
